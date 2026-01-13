@@ -27,7 +27,7 @@ export default function Home() {
         applicationCategory: "EducationalApplication",
         operatingSystem: "Android, iOS",
         description:
-          "Track, organize, and get reminded about every competitive exam and job opportunity. The best exam notification app for UPSC, SSC, Banking, Railway, State PSC exams.",
+          "Track, organize, and get reminded about every competitive exam and job opportunity. The best exam and job notification app for UPSC, SSC, Banking, Railway, State PSC exams and government jobs.",
         offers: {
           "@type": "Offer",
           price: "0",
@@ -99,11 +99,11 @@ export default function Home() {
 
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-foreground text-balance">
-            Never Miss an Exam Again
+            Never Miss an Exam or Job Again
           </h1>
 
           {/* Tagline */}
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-balance">Navigate Your Academic Journey</p>
+          <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-balance">Your Gateway to Exams & Career Opportunities</p>
 
           {/* iOS Beta Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8">
@@ -113,8 +113,8 @@ export default function Home() {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">
-            Exam Lens helps you track, organize, and get reminded about every competitive exam and job opportunity that
-            matters to you.
+            Exam Lens helps you track, organize, and get reminded about every competitive exam and job opportunity.
+            Stay ahead with timely notifications for government jobs, private sector openings, and all major exams.
           </p>
 
           {/* CTA Buttons */}
@@ -148,24 +148,24 @@ export default function Home() {
                 icon: "📝",
               },
               {
+                title: "Job Alerts",
+                desc: "Government & private job notifications",
+                icon: "💼",
+              },
+              {
                 title: "Smart Reminders",
                 desc: "Personalized notifications at the right time",
                 icon: "🔔",
               },
               {
                 title: "Visual Calendar",
-                desc: "See your exam schedule at a glance",
+                desc: "See exams & job deadlines at a glance",
                 icon: "📅",
               },
               {
                 title: "Your Interests",
-                desc: "Only see what matters to you",
+                desc: "Filter exams & jobs by your preferences",
                 icon: "🏷️",
-              },
-              {
-                title: "Dark Mode",
-                desc: "Easy on the eyes, day or night",
-                icon: "🌙",
               },
               {
                 title: "Works Offline",
@@ -292,8 +292,8 @@ export default function Home() {
             </div>
             <h2 className="text-3xl font-bold mb-6 text-foreground">Message from the Developer</h2>
             <p className="text-xl text-muted-foreground mb-8 italic text-balance leading-relaxed">
-              "Hi friends, this is an exam notifier and I just wanted to help the people so no one misses the exam
-              anymore."
+              "Hi friends, this app helps you stay on top of both exams and job opportunities. I built it so no one
+              misses an important exam or career opportunity ever again."
             </p>
             <div className="border-t border-border pt-6">
               <p className="font-semibold text-foreground">Piyush Bhardwaj</p>
@@ -309,7 +309,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-foreground">Start Your Journey Today</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Join thousands of students who never miss an exam deadline
+            Join thousands of users who never miss an exam or job deadline
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

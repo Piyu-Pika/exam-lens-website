@@ -9,11 +9,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Exam Lens - Never Miss an Exam | Competitive Exam & Job Alert App",
+    default: "Exam Lens - Never Miss an Exam or Job | Exam & Job Alert App",
     template: "%s | Exam Lens",
   },
   description:
-    "Track, organize, and get reminded about every competitive exam and job opportunity. The best exam notification app for UPSC, SSC, Banking, Railway, State PSC exams. Download now for Android & iOS.",
+    "Track, organize, and get reminded about every competitive exam and job opportunity. The best exam and job notification app for UPSC, SSC, Banking, Railway, State PSC exams and government jobs. Download now for Android & iOS.",
   keywords: [
     "exam notification app",
     "competitive exam tracker",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://exam-lens.vercel.app",
     siteName: "Exam Lens",
-    title: "Exam Lens - Never Miss an Exam | Competitive Exam & Job Alert App",
+    title: "Exam Lens - Never Miss an Exam or Job | Exam & Job Alert App",
     description:
-      "Track, organize, and get reminded about every competitive exam and job opportunity. Download the best exam notification app for UPSC, SSC, Banking, Railway exams.",
+      "Track, organize, and get reminded about every competitive exam and job opportunity. Download the best exam and job notification app for UPSC, SSC, Banking, Railway exams and government jobs.",
     images: [
       {
         url: "/images/logo.jpg",
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Exam Lens - Never Miss an Exam",
+    title: "Exam Lens - Never Miss an Exam or Job",
     description:
-      "Track & get notified about every competitive exam and job opportunity. Download now!",
+      "Track & get notified about every competitive exam and job opportunity. Your gateway to exams & career success!",
     images: ["/images/logo.jpg"],
     creator: "@piyushbhardwaj",
   },

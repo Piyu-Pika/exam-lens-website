@@ -12,7 +12,7 @@ export default function Footer() {
               </div>
               <span className="font-semibold">Exam Lens</span>
             </div>
-            <p className="text-sm opacity-80">Navigate Your Academic Journey</p>
+            <p className="text-sm opacity-80">Your Gateway to Exams & Career Opportunities</p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
