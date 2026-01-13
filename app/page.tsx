@@ -17,8 +17,67 @@ export default function Home() {
     element?.scrollIntoView({ behavior: "smooth" })
   }
 
+  // JSON-LD structured data for rich search results
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: "Exam Lens",
+        applicationCategory: "EducationalApplication",
+        operatingSystem: "Android, iOS",
+        description:
+          "Track, organize, and get reminded about every competitive exam and job opportunity. The best exam notification app for UPSC, SSC, Banking, Railway, State PSC exams.",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "INR",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          ratingCount: "100",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        author: {
+          "@type": "Person",
+          name: "Piyush Bhardwaj",
+        },
+        downloadUrl: "https://github.com/Piyu-Pika/exam-lens-website/releases/download/v1/app-release.apk",
+      },
+      {
+        "@type": "Organization",
+        name: "Exam Lens",
+        url: "https://exam-lens.vercel.app",
+        logo: "https://exam-lens.vercel.app/images/logo.jpg",
+        sameAs: [],
+        contactPoint: {
+          "@type": "ContactPoint",
+          email: "piyushbhardwaj@gmail.com",
+          contactType: "customer support",
+        },
+      },
+      {
+        "@type": "WebSite",
+        name: "Exam Lens",
+        url: "https://exam-lens.vercel.app",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://exam-lens.vercel.app/?search={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+    ],
+  }
+
   return (
     <div>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       {/* Hero Section */}
@@ -60,9 +119,12 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition">
+            <a
+              href="https://github.com/Piyu-Pika/exam-lens-website/releases/download/v1/app-release.apk"
+              className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition"
+            >
               Download Now
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection("features")}
               className="px-8 py-4 bg-muted text-foreground rounded-xl font-semibold hover:bg-muted/80 transition"
@@ -250,9 +312,12 @@ export default function Home() {
             Join thousands of students who never miss an exam deadline
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition">
+            <a
+              href="https://github.com/Piyu-Pika/exam-lens-website/releases/download/v1/app-release.apk"
+              className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition"
+            >
               Download for Android
-            </button>
+            </a>
             <button className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition">
               Download for iOS
             </button>
