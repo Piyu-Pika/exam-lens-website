@@ -44,7 +44,7 @@ export default function Home() {
           "@type": "Person",
           name: "Piyush Bhardwaj",
         },
-        downloadUrl: "https://github.com/Piyu-Pika/deployuemnonly/releases/download/v3/app-release.apk",
+        downloadUrl: "https://github.com/Piyu-Pika/deployuemnonly/releases/download/v4/exam_lens.apk",
       },
       {
         "@type": "Organization",
@@ -120,7 +120,7 @@ export default function Home() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <a
-              href="https://github.com/Piyu-Pika/deployuemnonly/releases/download/v3/app-release.apk"
+              href="https://github.com/Piyu-Pika/deployuemnonly/releases/download/v4/exam_lens.apk"
               className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition"
             >
               Download Now
@@ -313,7 +313,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com/Piyu-Pika/deployuemnonly/releases/download/v3/app-release.apk"
+              href="https://github.com/Piyu-Pika/deployuemnonly/releases/download/v4/exam_lens.apk"
               className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition"
             >
               Download for Android
