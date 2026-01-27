@@ -70,7 +70,7 @@ export default function PrivacyPage() {
               <p className="text-muted-foreground">
                 If you have any questions about this Privacy Policy, please contact us at:{" "}
                 <a href="mailto:privacy@examlens.com" className="text-primary hover:underline">
-                  privacy@examlens.com
+                  piyushbhardwaj1603@gmail.com
                 </a>
               </p>
             </div>
