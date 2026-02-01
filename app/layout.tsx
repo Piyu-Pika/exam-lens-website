@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "Track, organize, and get reminded about every competitive exam and job opportunity. Download the best exam and job notification app for UPSC, SSC, Banking, Railway exams and government jobs.",
     images: [
       {
-        url: "/images/logo.jpg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Exam Lens - Competitive Exam & Job Alert App",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Exam Lens - Never Miss an Exam or Job",
     description:
       "Track & get notified about every competitive exam and job opportunity. Your gateway to exams & career success!",
-    images: ["/images/logo.jpg"],
+    images: ["/images/logo.png"],
     creator: "@piyushbhardwaj",
   },
   robots: {
@@ -86,15 +86,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/images/logo.jpg",
+        url: "/images/logo.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/images/logo.jpg",
+        url: "/images/logo.png",
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    apple: "/images/logo.jpg",
+    apple: "/images/logo.png",
   },
 }
 

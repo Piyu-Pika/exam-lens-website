@@ -50,7 +50,7 @@ export default function Home() {
         "@type": "Organization",
         name: "Exam Lens",
         url: "https://exam-lens.vercel.app",
-        logo: "https://exam-lens.vercel.app/images/logo.jpg",
+        logo: "https://exam-lens.vercel.app/images/logo.png",
         sameAs: [],
         contactPoint: {
           "@type": "ContactPoint",
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 rounded-full gradient-primary p-1 flex items-center justify-center">
               <div className="w-full h-full rounded-full bg-background dark:bg-slate-900 flex items-center justify-center">
-                <img src="/images/logo.jpg" alt="Exam Lens Logo" className="w-24 h-24 object-contain" />
+                <img src="/images/logo.png" alt="Exam Lens Logo" className="w-24 h-24 object-contain" />
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
               href="https://github.com/Piyu-Pika/deployuemnonly/releases/download/v5/app-release.apk"
               className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/50 transition"
@@ -131,6 +131,23 @@ export default function Home() {
             >
               Learn More
             </button>
+          </div>
+
+          <div className="flex flex-col items-center gap-6 mb-16">
+            <a href="https://indusapp.store/9dg2kul7" target="_blank" rel="noopener noreferrer">
+              <img
+                alt="Get it on Indus Appstore"
+                src="https://docstore.indusappstore.com/public/external/developerdashboard-static/badge-black-background-english.png"
+                className="h-16 w-auto hover:opacity-90 transition"
+              />
+            </a>
+
+            <div className="flex flex-col items-center gap-2">
+              <div className="bg-white p-2 rounded-xl shadow-lg">
+                <img src="/images/QR-code.svg" alt="Scan to Download" className="w-32 h-32" />
+              </div>
+              <p className="text-sm text-muted-foreground">Scan to Download</p>
+            </div>
           </div>
         </div>
       </section>
