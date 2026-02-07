@@ -3,88 +3,81 @@ import Footer from "@/components/footer"
 
 export default function LicensePage() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#0f172a] text-[#e2e8f0]">
       <Header />
 
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold mb-12 text-foreground">Software License</h1>
+      <section className="pt-32 pb-20 px-6">
+        <div className="mx-auto max-w-4xl space-y-8">
+          <div className="space-y-4">
+            <p className="uppercase tracking-[0.4em] text-xs text-[#94a3b8]">License</p>
+            <h1 className="text-4xl sm:text-5xl font-semibold font-['Fraunces']">Software License</h1>
+            <p className="text-lg text-[#cbd5f5] max-w-2xl">
+              This agreement defines the boundaries for using Exam Lens software.
+            </p>
+          </div>
 
-          <div className="prose prose-invert max-w-none space-y-6">
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_-45px_rgba(15,23,42,0.8)] space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">Exam Lens Software License Agreement</h2>
-              <p className="text-muted-foreground">
-                This Software License Agreement ("Agreement") is entered into as of January 13, 2026, between Exam Lens,
-                Inc. ("Licensor") and any person or entity using the Exam Lens software ("Licensee").
+              <h2 className="text-2xl font-semibold text-white mb-3">Exam Lens Software License Agreement</h2>
+              <p className="text-[#cbd5f5]">
+                This agreement is entered into as of January 13, 2026, between Exam Lens, Inc. and any person or entity
+                using the software.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">1. Grant of License</h2>
-              <p className="text-muted-foreground">
-                Licensor hereby grants to Licensee a non-exclusive, non-transferable license to use the Exam Lens
-                software in object code form only, for the purposes of tracking exams and receiving notifications.
+              <h2 className="text-2xl font-semibold text-white mb-3">1. Grant of License</h2>
+              <p className="text-[#cbd5f5]">
+                We grant a non-exclusive, non-transferable license to use Exam Lens in object code form to track exams
+                and receive notifications.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">2. Restrictions</h2>
-              <p className="text-muted-foreground">Licensee shall not:</p>
-              <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-                <li>Reverse engineer, decompile, or disassemble the software</li>
-                <li>Rent, lease, or lend the software</li>
-                <li>Modify or create derivative works of the software</li>
-                <li>Remove any proprietary notices or labels on the software</li>
-                <li>Use the software for any illegal purpose</li>
-                <li>Sell, transfer, or sublicense the software</li>
+              <h2 className="text-2xl font-semibold text-white mb-3">2. Restrictions</h2>
+              <ul className="list-disc list-inside text-[#cbd5f5] space-y-2">
+                <li>No reverse engineering, decompiling, or disassembly</li>
+                <li>No renting, leasing, or sublicensing</li>
+                <li>No modification or derivative works</li>
+                <li>No removal of proprietary notices</li>
+                <li>No illegal use</li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. Ownership</h2>
-              <p className="text-muted-foreground">
-                The Exam Lens software is licensed, not sold. Licensor retains all right, title, and interest in the
-                software and all copies thereof, including without limitation all rights to patches, updates, and
-                modifications.
+              <h2 className="text-2xl font-semibold text-white mb-3">3. Ownership</h2>
+              <p className="text-[#cbd5f5]">
+                Exam Lens is licensed, not sold. We retain all rights to the software, updates, and related materials.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Term and Termination</h2>
-              <p className="text-muted-foreground">
-                This license is effective until terminated. Licensee's rights under this license will terminate
-                automatically without notice from Licensor if Licensee fails to comply with any terms of this Agreement.
+              <h2 className="text-2xl font-semibold text-white mb-3">4. Termination</h2>
+              <p className="text-[#cbd5f5]">
+                This license remains active until terminated. It ends automatically if terms are violated.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Disclaimer of Warranties</h2>
-              <p className="text-muted-foreground">
-                THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-                LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+              <h2 className="text-2xl font-semibold text-white mb-3">5. Disclaimer</h2>
+              <p className="text-[#cbd5f5]">
+                The software is provided \"as is\" without warranties of any kind, express or implied.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
-              <p className="text-muted-foreground">
-                IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
-                ARISING OUT OF OR RELATING TO THIS LICENSE OR THE USE OF THE SOFTWARE.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">7. Contact</h2>
-              <p className="text-muted-foreground">
-                For license inquiries, please contact us at:{" "}
-                <a href="mailto:license@examlens.com" className="text-primary hover:underline">
+              <h2 className="text-2xl font-semibold text-white mb-3">6. Contact</h2>
+              <p className="text-[#cbd5f5]">
+                For license questions, email{" "}
+                <a href="mailto:license@examlens.com" className="text-white underline">
                   license@examlens.com
                 </a>
+                .
               </p>
             </div>
 
-            <div className="pt-6 border-t border-border mt-8">
-              <p className="text-sm text-muted-foreground">Last updated: January 13, 2026</p>
+            <div className="pt-6 border-t border-white/10 text-sm text-[#94a3b8]">
+              Last updated: January 13, 2026
             </div>
           </div>
         </div>

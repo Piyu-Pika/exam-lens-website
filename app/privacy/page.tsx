@@ -3,80 +3,77 @@ import Footer from "@/components/footer"
 
 export default function PrivacyPage() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#f8f8f6] text-[#1c1b19]">
       <Header />
 
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold mb-12 text-foreground">Privacy Policy</h1>
+      <section className="pt-32 pb-20 px-6">
+        <div className="mx-auto max-w-4xl space-y-8">
+          <div className="space-y-4">
+            <p className="uppercase tracking-[0.4em] text-xs text-[#8c8a86]">Privacy</p>
+            <h1 className="text-4xl sm:text-5xl font-semibold font-['Fraunces']">Privacy Policy</h1>
+            <p className="text-lg text-[#5f5c57] max-w-2xl">
+              We believe transparency builds trust. Here is exactly how Exam Lens handles your data.
+            </p>
+          </div>
 
-          <div className="prose prose-invert max-w-none space-y-6">
+          <div className="rounded-[28px] border border-[#e6e1da] bg-white p-8 shadow-[0_18px_50px_-40px_rgba(40,35,28,0.4)] space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
-              <p className="text-muted-foreground">
-                Exam Lens ("we", "us", "our", or "Company") operates the mobile application and website. This page
-                informs you of our policies regarding the collection, use, and disclosure of personal data when you use
-                our Service and the choices you have associated with that data.
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">1. Introduction</h2>
+              <p className="text-[#5f5c57]">
+                Exam Lens ("we", "us", or "our") operates the mobile application and website. This policy explains what
+                information we collect, why we collect it, and how you can manage it.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">2. Information Collection and Use</h2>
-              <p className="text-muted-foreground mb-4">
-                We collect several different types of information for various purposes to provide and improve our
-                Service to you.
-              </p>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Types of Data Collected:</h3>
-              <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-                <li>Personal Data (email address, name, usage preferences)</li>
-                <li>Device Information (device type, OS version)</li>
-                <li>Usage Data (pages visited, features used, time spent)</li>
-                <li>Exam preferences and tags you select</li>
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">2. Information We Collect</h2>
+              <p className="text-[#5f5c57] mb-4">We collect information necessary to deliver the service:</p>
+              <ul className="list-disc list-inside text-[#5f5c57] space-y-2">
+                <li>Account data like name and email address</li>
+                <li>Device information such as device type and OS version</li>
+                <li>Usage data including feature interactions and preferences</li>
+                <li>Exam tags and reminders you configure</li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. Use of Data</h2>
-              <p className="text-muted-foreground">Exam Lens uses the collected data for various purposes:</p>
-              <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-                <li>To provide and maintain our Service</li>
-                <li>To notify you about changes to our Service</li>
-                <li>To allow you to participate in interactive features of our Service</li>
-                <li>To provide customer support</li>
-                <li>To gather analysis or valuable information to improve our Service</li>
-                <li>To monitor the usage of our Service</li>
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">3. How We Use Data</h2>
+              <ul className="list-disc list-inside text-[#5f5c57] space-y-2">
+                <li>Provide and maintain the service</li>
+                <li>Send critical exam and job notifications</li>
+                <li>Improve product performance and reliability</li>
+                <li>Respond to support requests</li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Security of Data</h2>
-              <p className="text-muted-foreground">
-                The security of your data is important to us but remember that no method of transmission over the
-                Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable
-                means to protect your Personal Data, we cannot guarantee its absolute security.
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">4. Data Security</h2>
+              <p className="text-[#5f5c57]">
+                We use industry-standard safeguards to protect your data. No system is fully secure, but we continually
+                improve our practices.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Changes to This Privacy Policy</h2>
-              <p className="text-muted-foreground">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-                Privacy Policy on this page and updating the "effective date" at the top of this Privacy Policy.
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">5. Updates</h2>
+              <p className="text-[#5f5c57]">
+                We may update this policy. When we do, we will update the effective date and notify users when required.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Contact Us</h2>
-              <p className="text-muted-foreground">
-                If you have any questions about this Privacy Policy, please contact us at:{" "}
-                <a href="mailto:privacy@examlens.com" className="text-primary hover:underline">
-                  piyushbhardwaj1603@gmail.com
+              <h2 className="text-2xl font-semibold text-[#1c1b19] mb-3">6. Contact</h2>
+              <p className="text-[#5f5c57]">
+                Questions? Email{" "}
+                <a href="mailto:privacy@examlens.com" className="text-[#1c1b19] underline">
+                  privacy@examlens.com
                 </a>
+                .
               </p>
             </div>
 
-            <div className="pt-6 border-t border-border mt-8">
-              <p className="text-sm text-muted-foreground">Last updated: January 13, 2026</p>
+            <div className="pt-6 border-t border-[#efeae3] text-sm text-[#8c8a86]">
+              Last updated: January 13, 2026
             </div>
           </div>
         </div>

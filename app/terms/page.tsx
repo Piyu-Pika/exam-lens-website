@@ -3,96 +3,69 @@ import Footer from "@/components/footer"
 
 export default function TermsPage() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#f3f1ff] text-[#1b1a24]">
       <Header />
 
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold mb-12 text-foreground">Terms of Service</h1>
+      <section className="pt-32 pb-20 px-6">
+        <div className="mx-auto max-w-4xl space-y-8">
+          <div className="space-y-4">
+            <p className="uppercase tracking-[0.4em] text-xs text-[#716f8b]">Terms</p>
+            <h1 className="text-4xl sm:text-5xl font-semibold font-['Fraunces']">Terms of Service</h1>
+            <p className="text-lg text-[#5b5875] max-w-2xl">
+              These terms define how you can use Exam Lens, and how we deliver the service.
+            </p>
+          </div>
 
-          <div className="prose prose-invert max-w-none space-y-6">
+          <div className="rounded-[28px] border border-[#e2ddf7] bg-white p-8 shadow-[0_18px_50px_-40px_rgba(50,40,120,0.4)] space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">1. Acceptance of Terms</h2>
-              <p className="text-muted-foreground">
-                By accessing and using the Exam Lens application and website, you accept and agree to be bound by the
-                terms and provision of this agreement. If you do not agree to abide by the above, please do not use this
+              <h2 className="text-2xl font-semibold text-[#1b1a24] mb-3">1. Acceptance</h2>
+              <p className="text-[#5b5875]">
+                By accessing or using Exam Lens, you agree to these terms and any updates we publish.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-[#1b1a24] mb-3">2. Use License</h2>
+              <p className="text-[#5b5875] mb-4">
+                We grant you a personal, non-commercial license to use the app. You may not:
+              </p>
+              <ul className="list-disc list-inside text-[#5b5875] space-y-2">
+                <li>Copy or redistribute the materials for commercial purposes</li>
+                <li>Reverse engineer, decompile, or tamper with the software</li>
+                <li>Remove proprietary notices or labels</li>
+                <li>Mirror the service on another server</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-[#1b1a24] mb-3">3. Disclaimer</h2>
+              <p className="text-[#5b5875]">
+                The service is provided \"as is\". We make no warranties regarding accuracy, availability, or fitness for
+                a particular purpose.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-[#1b1a24] mb-3">4. Limitation of Liability</h2>
+              <p className="text-[#5b5875]">
+                Exam Lens is not liable for indirect, incidental, or consequential damages arising from your use of the
                 service.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">2. Use License</h2>
-              <p className="text-muted-foreground">
-                Permission is granted to temporarily download one copy of the materials (information or software) on
-                Exam Lens for personal, non-commercial transitory viewing only. This is the grant of a license, not a
-                transfer of title, and under this license you may not:
-              </p>
-              <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-                <li>Modify or copy the materials</li>
-                <li>Use the materials for any commercial purpose or for any public display</li>
-                <li>Attempt to decompile or reverse engineer any software contained on Exam Lens</li>
-                <li>Remove any copyright or other proprietary notations from the materials</li>
-                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. Disclaimer</h2>
-              <p className="text-muted-foreground">
-                The materials on Exam Lens are provided on an 'as is' basis. Exam Lens makes no warranties, expressed or
-                implied, and hereby disclaims and negates all other warranties including, without limitation, implied
-                warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of
-                intellectual property or other violation of rights.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Limitations</h2>
-              <p className="text-muted-foreground">
-                In no event shall Exam Lens or its suppliers be liable for any damages (including, without limitation,
-                damages for loss of data or profit, or due to business interruption) arising out of the use or inability
-                to use the materials on Exam Lens, even if Exam Lens or an authorized representative has been notified
-                orally or in writing of the possibility of such damage.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Accuracy of Materials</h2>
-              <p className="text-muted-foreground">
-                The materials appearing on Exam Lens could include technical, typographical, or photographic errors.
-                Exam Lens does not warrant that any of the materials on Exam Lens are accurate, complete, or current.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Links</h2>
-              <p className="text-muted-foreground">
-                Exam Lens has not reviewed all of the sites linked to its website and is not responsible for the
-                contents of any such linked site. The inclusion of any link does not imply endorsement by Exam Lens of
-                the site. Use of any such linked website is at the user's own risk.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">7. Modifications</h2>
-              <p className="text-muted-foreground">
-                Exam Lens may revise these terms of service for its website at any time without notice. By using this
-                website, you are agreeing to be bound by the then current version of these terms of service.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-foreground mb-4">8. Contact Information</h2>
-              <p className="text-muted-foreground">
-                If you have any questions about these Terms of Service, please contact us at:{" "}
-                <a href="mailto:terms@examlens.com" className="text-primary hover:underline">
+              <h2 className="text-2xl font-semibold text-[#1b1a24] mb-3">5. Contact</h2>
+              <p className="text-[#5b5875]">
+                Questions about these terms? Email{" "}
+                <a href="mailto:terms@examlens.com" className="text-[#1b1a24] underline">
                   terms@examlens.com
                 </a>
+                .
               </p>
             </div>
 
-            <div className="pt-6 border-t border-border mt-8">
-              <p className="text-sm text-muted-foreground">Last updated: January 13, 2026</p>
+            <div className="pt-6 border-t border-[#efe9ff] text-sm text-[#7b78a0]">
+              Last updated: January 13, 2026
             </div>
           </div>
         </div>

@@ -10,13 +10,6 @@ const blogPosts = [
       "The story behind creating Exam Lens - from a simple idea to helping thousands of students never miss an exam.",
     date: "January 10, 2026",
     category: "Journey",
-    content: `
-Exam Lens started with a simple observation: many aspiring candidates miss important exam notifications and deadlines because they don't have a centralized way to track them. As a developer passionate about education, I decided to create a solution that would solve this problem once and for all.
-
-The first version was built over a weekend, with just basic exam tracking functionality. But the response from beta testers was overwhelming. Students loved having all their exams in one place, with smart reminders and a beautiful interface.
-
-Over the past few months, we've added calendar views, a public hub for discovering new exams, dark mode support, and so much more. The journey has been incredible, and we're just getting started.
-    `,
   },
   {
     id: 2,
@@ -24,17 +17,6 @@ Over the past few months, we've added calendar views, a public hub for discoveri
     excerpt: "Exploring our design choices and why glassmorphism is perfect for educational apps.",
     date: "January 5, 2026",
     category: "Design",
-    content: `
-When designing Exam Lens, we wanted to create an interface that felt modern, clean, and approachable. Glassmorphism - with its frosted glass effect and transparency - seemed like the perfect fit.
-
-Glassmorphism provides several benefits:
-- It creates visual hierarchy through depth and layers
-- The transparency conveys openness and clarity
-- It feels contemporary without being trendy
-- The soft edges are psychologically calming
-
-Combined with our purple-to-blue gradient theme, we achieved a design that's both professional and inviting. It resonates with students who want a modern app for their academic journey.
-    `,
   },
   {
     id: 3,
@@ -42,48 +24,58 @@ Combined with our purple-to-blue gradient theme, we achieved a design that's bot
     excerpt: "Sneak peek into the iOS version of Exam Lens and what features are coming next.",
     date: "December 28, 2025",
     category: "Updates",
-    content: `
-We're excited to announce that Exam Lens for iOS is coming very soon! The app is currently in beta testing, and we've been overwhelmed by the positive feedback from our testers.
-
-The iOS version includes everything from the Android app, plus some iOS-specific optimizations:
-- Native notifications that work seamlessly with iOS
-- Siri shortcuts for quick exam checks
-- Widget support for glanceability
-- Deep integration with iOS Calendar
-
-We're aiming to launch on the App Store in early February 2026. Stay tuned for more updates!
-    `,
   },
 ]
 
 export default function BlogPage() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#fff7ef] text-[#1d1b16]">
       <Header />
 
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 text-foreground">Blog</h1>
-            <p className="text-xl text-muted-foreground">Stories, updates, and insights from the Exam Lens journey</p>
+      <section className="pt-32 pb-20 px-6">
+        <div className="mx-auto max-w-6xl space-y-12">
+          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-end">
+            <div className="space-y-4">
+              <p className="uppercase tracking-[0.5em] text-xs text-[#8b7a6a]">Blog</p>
+              <h1 className="text-4xl sm:text-5xl font-semibold font-['Fraunces']">
+                Notes, updates, and quiet wins.
+              </h1>
+              <p className="text-lg text-[#6c5c4f] max-w-xl">
+                Stories from the team building Exam Lens and the aspirants shaping it.
+              </p>
+            </div>
+            <div className="rounded-[26px] border border-[#e7d9cc] bg-white p-6 shadow-[0_20px_60px_-40px_rgba(52,40,32,0.45)]">
+              <p className="text-xs uppercase tracking-[0.4em] text-[#a08978]">Featured</p>
+              <h2 className="mt-4 text-2xl font-semibold">Preparing for 2026 exams with clarity</h2>
+              <p className="mt-2 text-[#6c5c4f]">
+                A quick guide to building a calm prep system using Exam Lens.
+              </p>
+              <Link
+                href="/blog/1"
+                className="mt-5 inline-flex rounded-full border border-[#1d1b16] px-4 py-2 text-sm font-semibold hover:bg-[#1d1b16] hover:text-white transition"
+              >
+                Read guide
+              </Link>
+            </div>
           </div>
 
-          <div className="space-y-8">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
-              <article key={post.id} className="glass-card p-8 hover:shadow-xl transition">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-semibold">
-                    {post.category}
-                  </span>
-                  <span className="text-sm text-muted-foreground">{post.date}</span>
+              <article
+                key={post.id}
+                className="rounded-[24px] border border-[#eddccf] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(52,40,32,0.5)]"
+              >
+                <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-[#9a8575]">
+                  <span>{post.category}</span>
+                  <span className="normal-case tracking-normal text-[#a48f80]">{post.date}</span>
                 </div>
-                <h2 className="text-2xl font-bold mb-3 text-foreground">{post.title}</h2>
-                <p className="text-muted-foreground mb-6">{post.excerpt}</p>
+                <h3 className="mt-4 text-xl font-semibold text-[#1d1b16]">{post.title}</h3>
+                <p className="mt-3 text-[#6c5c4f]">{post.excerpt}</p>
                 <Link
                   href={`/blog/${post.id}`}
-                  className="text-primary font-semibold hover:underline inline-flex items-center gap-2"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#1d1b16] hover:underline"
                 >
-                  Read More →
+                  Read more →
                 </Link>
               </article>
             ))}

@@ -11,15 +11,20 @@ export default function Header() {
   const pathname = usePathname()
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setIsDark(true)
-      document.documentElement.classList.add("dark")
-    }
+    const stored = window.localStorage.getItem("theme")
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const shouldUseDark = stored ? stored === "dark" : prefersDark
+    setIsDark(shouldUseDark)
+    document.documentElement.classList.toggle("dark", shouldUseDark)
   }, [])
 
   const toggleDarkMode = () => {
-    setIsDark(!isDark)
-    document.documentElement.classList.toggle("dark")
+    setIsDark((prev) => {
+      const next = !prev
+      document.documentElement.classList.toggle("dark", next)
+      window.localStorage.setItem("theme", next ? "dark" : "light")
+      return next
+    })
   }
 
   const navLinks = [
